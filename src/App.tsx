@@ -1,7 +1,7 @@
 import './styles.css'
 import IMAGE from './main_img.jpg'
 import LOGO from './svgFile.svg'
-import { ClickCounter } from './ClickCounter'
+import { ClickCounter } from './components/ClickCounter'
 
 export const App = () => {
   return (
@@ -11,7 +11,7 @@ export const App = () => {
       </h1>
       <img src={LOGO} alt="main" />
       <img src={IMAGE} alt="main" width="300" height="200" />
-      <ClickCounter />
+      <ClickCounter name="test1" />
     </div>
   )
 }
