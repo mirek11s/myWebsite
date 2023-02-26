@@ -1,10 +1,10 @@
 import { useState } from 'react'
 
-type GreeterProps = {
+type ClickCounterProps = {
   name: string
 }
 
-export const ClickCounter = (props: GreeterProps) => {
+export const ClickCounter = (props: ClickCounterProps) => {
   const [count, setCount] = useState(0)
 
   return (
