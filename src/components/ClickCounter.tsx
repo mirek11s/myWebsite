@@ -5,7 +5,7 @@ type ClickCounterProps = {
 }
 
 export const ClickCounter = (props: ClickCounterProps) => {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState<number>(0)
 
   return (
     <div>
