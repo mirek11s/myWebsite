@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import { useCallback } from 'react'
 import type { Container, Engine } from 'tsparticles-engine'
 import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
@@ -14,7 +14,7 @@ const ParticlesRenderer = () => {
   }, [])
 
   const particlesLoaded = useCallback(async (container: Container | undefined) => {
-    await console.log(container)
+    console.log(container)
   }, [])
   return (
     <Particles
@@ -24,7 +24,7 @@ const ParticlesRenderer = () => {
       options={{
         background: {
           color: {
-            value: '#0d47a1',
+            value: '#ffffff',
           },
         },
         fullScreen: {
@@ -56,10 +56,10 @@ const ParticlesRenderer = () => {
         },
         particles: {
           color: {
-            value: '#ffffff',
+            value: '#000000',
           },
           links: {
-            color: '#ffffff',
+            color: '#000000',
             distance: 150,
             enable: true, // enable links on particles
             opacity: 0.5,
